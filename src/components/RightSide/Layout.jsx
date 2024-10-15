@@ -6,7 +6,9 @@ const Layout = () => {
     return (
         <>
             <Menu />
-            <Outlet />
+            <div className='h-screen w-full flex justify-center items-center'>
+                <Outlet />
+            </div>
         </>
     );
 }
