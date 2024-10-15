@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 
 
-const router = createBrowserRouter(
+const routes = createBrowserRouter(
   createRoutesFromElements(
     // Root Layout with Outlet
     <Route path='/' element={<Layout />}>
@@ -27,7 +27,9 @@ const router = createBrowserRouter(
 const App = () => {
   return (
     <>
-      <h1 className='text-5xl text-red-700'>Welcome to the portfolio</h1>
+      <RouterProvider router={routes}>
+        <Layout />
+      </RouterProvider>
     </>
   );
 }
