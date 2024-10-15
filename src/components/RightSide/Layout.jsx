@@ -1,9 +1,12 @@
 import React from 'react';
+import {Outlet} from 'react-router-dom';
+import Menu from '../LeftSide/Menu';
 
 const Layout = () => {
     return (
         <>
-            
+            <Menu />
+            <Outlet />
         </>
     );
 }
