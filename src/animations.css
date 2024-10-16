@@ -4,26 +4,20 @@
     animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
-.scale-up-hor-left-close{
-    -webkit-animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-
-
 .scale-left:hover{
     -webkit-animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 } 
 
-.scale-left-close::after{
-    -webkit-animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+.scale-left-close{
+    -webkit-animation: scale-up-hor-left-close 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-hor-left-close 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 @-webkit-keyframes scale-up-hor-left {
     0% {
-      -webkit-transform: scaleX(0.5);
-              transform: scaleX(0.5);
+      -webkit-transform: scaleX(0.6);
+              transform: scaleX(0.6);
       -webkit-transform-origin: 0% 0%;
               transform-origin: 0% 0%;
     }
@@ -36,8 +30,8 @@
   }
   @keyframes scale-up-hor-left {
     0% {
-      -webkit-transform: scaleX(0.5);
-              transform: scaleX(0.5);
+      -webkit-transform: scaleX(0.6);
+              transform: scaleX(0.6);
       -webkit-transform-origin: 0% 0%;
               transform-origin: 0% 0%;
     }
@@ -57,8 +51,8 @@
               transform-origin: 0% 0%;
     }
     100% {
-      -webkit-transform: scaleX(0.5);
-              transform: scaleX(0.5);
+      -webkit-transform: scaleX(0.6);
+              transform: scaleX(0.6);
       -webkit-transform-origin: 0% 0%;
               transform-origin: 0% 0%;
     }
@@ -71,8 +65,8 @@
               transform-origin: 0% 0%;
     }
     100% {
-      -webkit-transform: scaleX(0.5);
-              transform: scaleX(0.5);
+      -webkit-transform: scaleX(0.6);
+              transform: scaleX(0.6);
       -webkit-transform-origin: 0% 0%;
               transform-origin: 0% 0%;
     }
