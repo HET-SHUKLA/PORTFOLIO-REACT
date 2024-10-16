@@ -1,17 +1,21 @@
+.blinking{
+        animation: blink 800ms infinite;
+}
+
 
 .scale-up-hor-left {
-    -webkit-animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        -webkit-animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .scale-left{
-    -webkit-animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        -webkit-animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: scale-up-hor-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .scale-left-close{
-    -webkit-animation: scale-up-hor-left-close 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: scale-up-hor-left-close 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        -webkit-animation: scale-up-hor-left-close 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: scale-up-hor-left-close 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 @-webkit-keyframes scale-up-hor-left {
@@ -72,3 +76,8 @@
     }
 }
   
+
+@keyframes blink {
+        from { opacity: 1; }
+        to { opacity: 0; }
+    }

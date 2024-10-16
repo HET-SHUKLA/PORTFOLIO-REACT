@@ -1,10 +1,73 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import '../animations.css';
 
 const Home = () => {
+
+    const skills = ['Web Application Developer...', 'Android Developer...', 'A Software Developer!']
+    
+    const [skill, setSkill] = useState(skills[0]);
+    const [index, setIndex] = useState(0);
+    const [subIndex, setSubIndex] = useState(0);
+    const [isDeleting, setIsDeleting] = useState(false);
+    const [speed, setSpeed] = useState(20);
+
+    const currTime = new Date().getHours();
+    let greeting;
+
+    if(currTime < 12)
+        greeting = 'Morning';
+    else
+        greeting = 'Evening';
+
+        useEffect(() => {
+            const typingTimeout = setTimeout(() => {
+                if (isDeleting) {
+                    setSubIndex(prev => prev - 1);
+                } else {
+                    setSubIndex(prev => prev + 1);
+                }
+    
+                if (!isDeleting && subIndex === skills[index].length) {
+                    if(index === skills.length-1) return;
+                    setTimeout(() => setIsDeleting(true), 1000); 
+                } else if (isDeleting && subIndex === 0) {
+                    setIsDeleting(false);
+                    setIndex((prev) => {
+                        if(prev < skills.length - 1){
+                            return prev+1;
+                        } else{
+                            return prev;
+                        }
+                    });
+                }
+    
+                setSpeed(isDeleting ? 10 : 50);
+            }, speed);
+    
+            return () => clearTimeout(typingTimeout);
+
+
+        }, [subIndex, isDeleting, index]);
+    
+        useEffect(() => {
+            setSkill(skills[index].substring(0, subIndex));
+        }, [subIndex, index]);
+    
     return (
-        <>
-            Welcome to the Home Page   
-        </>
+        <div className='flex flex-col'>
+            <div>
+                <p className='text-5xl text-center'>Good {greeting},</p>
+                <h1 className='text-8xl text-center'>I am HET SHUKLA</h1>
+            </div>
+
+            <div className='mt-10'>
+                <h2 className='text-5xl text-center'>{skill} <span className={`blinking ${index === skills.length-1 && 'hidden'}`}>|</span></h2>
+            </div>
+
+            <div className='mt-16'>
+                <h2 className='text-3xl text-center'>I welcome you to My <strong>Portfolio</strong></h2>
+            </div>
+        </div>
     );
 }
 
