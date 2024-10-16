@@ -6,7 +6,7 @@ const Layout = () => {
     return (
         <>
             <Menu />
-            <div className='h-screen w-full flex justify-center items-center'>
+            <div className='h-screen w-full flex justify-center items-center overflow-auto hide-scroll'>
                 <Outlet />
             </div>
         </>
