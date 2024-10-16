@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from './components/RightSide/Layout';
-import {Home, About} from './pages';
+import {Home, About, Projects} from './pages';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -19,6 +19,9 @@ const routes = createBrowserRouter(
 
       {/* About Page */}
       <Route path='/about' element={<About />} />
+
+      {/* Projects Page */}
+      <Route path='/projects' element={<Projects />} />
 
     </Route>
   )
