@@ -10,15 +10,19 @@ const Menu = () => {
     const [hovers, setHovers] = useState(false);
 
     const handleMouseEnter = () => {
-        setHovers(true);
+       // setTimeout(function() {
+            setHovers(true);
+       // }, 1000);
     }
 
     const handleMouseLeave = () => {
-        setHovers(false);
+        //setTimeout(function() {
+            setHovers(false);
+        //}, 1000);
     }
 
     return (
-        <div className='h-screen flex items-center mx-10'>
+        <div className='scale-left scale-left-close h-screen flex items-center mx-10'>
 
             <div className='flex flex-col justify-evenly items-center h-3/4 rounded-md p-2 border border-purple-500' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             

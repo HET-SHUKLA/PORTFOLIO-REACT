@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../../animations.css';
 
 const MenuItem = ({image, text, to="", hovers=false}) => {
 
@@ -12,7 +13,7 @@ const MenuItem = ({image, text, to="", hovers=false}) => {
                             <img src={image} alt={text} /> 
                         </div>
                         <div className={`ml-3 ${!hovers && "hidden"}`}>
-                            <p>{text}</p>
+                            <p className='scale-up-hor-left scale-up-hor-left-close'>{text}</p>
                         </div>
                     </div>
                 </Link>
