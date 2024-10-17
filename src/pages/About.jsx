@@ -1,15 +1,40 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const About = () => {
     return (
         <>
-          Welcome to the About.jsx
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ullam sit delectus quam eveniet eligendi nemo magni! Esse earum expedita, ex labore autem molestias at eius impedit, aperiam accusantium a optio explicabo cum corporis architecto molestiae, temporibus similique voluptatem doloremque? Perspiciatis porro ratione officiis voluptas cumque accusamus et facere quos.
+          <div className='w-full h-5/6 flex flex-col items-center'>
+            <div>
+              <h1 className='text-5xl'>About Me</h1>
+            </div>
 
-         isci. Sit nemo minima ipsum laboriosam temporibus repudiandae labore mollitia excepturi ea explicabo! Impedit repellat placeat harum dignissimos, natus sit voluptas laboriosam optio quis perspiciatis esse voluptates praesentium quisquam numquam sequi iusto
-         
-         
-          repudiandae ducimus modi soluta porro nulla. Soluta sed a iste quod dignissimos aliquam non pariatur sint. Dolorum, ut eius doloribus voluptate dolor possimus, recusandae molestias hic, impedit totam fugit quidem quia! Autem odio est mollitia dolores, quae at aperiam minima neque iure molestias reiciendis doloremque magnam dolorem fugit?
+            <div className='mt-10'>
+              <div className="about-title text-2xl">
+                <p>Hello, I once again welcome you to my Portfolio.</p>
+              </div>
+              <br />
+              <div className="about-content">
+                <h2 className='text-xl'>
+                  I am HET SHUKLA. A Passionate Software Developer from India. I have completed my bachelors in Bachelor's of Science In Information Technology with Distinction at <a href="www.charusat.ac.in">CHARUSAT UNIVERSITY</a>. I worked as a Research Fellow at my University for 1.5 years, and right now I am persuing my Masters in Computer Applications at the same University.
+
+                  <br /><br />
+
+                  I love Developing, I have created many Projects in multiple Frameworks with multiple Technology. Apart from programming, I also love Gaming and outdoor sport.
+
+                  <br /><br />
+
+                  If you also love programming, or you have some task for me then you can connect with me 
+                  <Link> Here</Link>
+
+                  <br /><br />
+
+                  Thank You for visiting.
+
+                </h2>
+              </div>
+            </div>
+          </div>
         </>
     );
 }
