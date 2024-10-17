@@ -25,7 +25,7 @@ const About = () => {
                   <br /><br />
 
                   If you also love programming, or you have some task for me then you can connect with me 
-                  <Link> Here</Link>
+                  <Link to="/contact" > Here</Link>
 
                   <br /><br />
 
