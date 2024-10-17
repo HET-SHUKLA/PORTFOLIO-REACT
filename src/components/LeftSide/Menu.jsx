@@ -31,6 +31,7 @@ const Menu = () => {
                 <MenuItem image={profileImage} text={"Profile"} hovers={hovers} />
                 <MenuItem image={projectsImage} text={"Projects"} to={"projects"} hovers={hovers} />
                 <MenuItem image={aboutImage} text={"About"} to={"about"} hovers={hovers} />
+                <MenuItem image={aboutImage} text={"Contact"} to={"contact"} hovers={hovers} />
                 
             </div>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from './components/RightSide/Layout';
-import {Home, About, Projects} from './pages';
+import {Home, About, Projects, Contact} from './pages';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -22,6 +22,9 @@ const routes = createBrowserRouter(
 
       {/* Projects Page */}
       <Route path='/projects' element={<Projects />} />
+
+      {/* Contact Page */}
+      <Route path='/contact' element={<Contact />} />
 
     </Route>
   )
