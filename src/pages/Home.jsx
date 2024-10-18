@@ -61,7 +61,7 @@ const Home = () => {
             </div>
 
             <div className='mt-10'>
-                <h2 className='text-5xl text-center'>{skill} <span className={`blinking ${index === skills.length-1 && 'hidden'}`}>|</span></h2>
+                <h2 className='text-5xl text-center'>{skill} <span className={`blinking ${index === skills.length-1 && 'hidden'}`}>_</span></h2>
             </div>
 
             <div className='mt-16'>
