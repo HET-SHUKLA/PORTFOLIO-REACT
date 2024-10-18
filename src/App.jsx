@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from './components/RightSide/Layout';
-import {Home, About, Projects, Contact} from './pages';
+import {Home, About, Projects, Contact, TechStack} from './pages';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -16,6 +16,9 @@ const routes = createBrowserRouter(
 
       {/* Home Page */}
       <Route path='' element={<Home />} />
+
+      {/* Tech Stack */}
+      <Route path='techstack' element={<TechStack />} />
 
       {/* About Page */}
       <Route path='/about' element={<About />} />

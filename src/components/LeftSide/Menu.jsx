@@ -28,7 +28,9 @@ const Menu = () => {
             <div className='flex flex-col justify-evenly items-center h-3/4 rounded-md p-2 border border-purple-500' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             
                 
+                
                 <MenuItem image={profileImage} text={"Profile"} hovers={hovers} />
+                <MenuItem image={projectsImage} text={"Technical Skills"} to={"techstack"} hovers={hovers} />
                 <MenuItem image={projectsImage} text={"Projects"} to={"projects"} hovers={hovers} />
                 <MenuItem image={aboutImage} text={"About"} to={"about"} hovers={hovers} />
                 <MenuItem image={aboutImage} text={"Connect"} to={"connect"} hovers={hovers} />
