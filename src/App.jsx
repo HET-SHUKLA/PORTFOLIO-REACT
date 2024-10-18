@@ -24,7 +24,7 @@ const routes = createBrowserRouter(
       <Route path='/projects' element={<Projects />} />
 
       {/* Contact Page */}
-      <Route path='/contact' element={<Contact />} />
+      <Route path='/connect' element={<Contact />} />
 
     </Route>
   )

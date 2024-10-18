@@ -11,27 +11,28 @@ const About = () => {
 
             <div className='mt-10'>
               <div className="about-title text-2xl">
-                <p>Hello, I once again welcome you to my Portfolio.</p>
+                <p>Hello and welcome to my portfolio!</p>
               </div>
               <br />
               <div className="about-content">
                 <h2 className='text-xl'>
-                  I am HET SHUKLA. A Passionate Software Developer from India. I have completed my bachelors in Bachelor's of Science In Information Technology with Distinction at <a href="www.charusat.ac.in">CHARUSAT UNIVERSITY</a>. I worked as a Research Fellow at my University for 1.5 years, and right now I am persuing my Masters in Computer Applications at the same University.
+                I'm Het Shukla, a passionate software developer from India. I earned my Bachelor's in Information Technology with distinction from <a href="www.charusat.ac.in">Charusat University</a>, where I also spent 1.5 years as a Research Fellow. Currently, I'm pursuing my Master’s in Computer Applications at the same university.
 
                   <br /><br />
 
-                  I love Developing, I have created many Projects in multiple Frameworks with multiple Technology. Apart from programming, I also love Gaming and outdoor sport.
+                  Why do I code? Because I love it! Over the years, I’ve built numerous projects across various frameworks and technologies, always eager to learn something new. When I'm not coding, you'll probably find me gaming or enjoying outdoor sports (because even developers need some fresh air, right?).
 
                   <br /><br />
 
-                  If you also love programming, or you have some task for me then you can connect with me 
-                  <Link to="/contact" > Here</Link>
+                  If you share my love for programming, or if you have a challenge you'd like me to tackle, feel free to 
+                  <Link to="/connect" > <strong>connect with me here. </strong></Link>
 
                   <br /><br />
 
-                  Thank You for visiting.
-
+                  Thanks for stopping by, hope to code with you soon!
                 </h2>
+
+                <br />
               </div>
             </div>
           </div>
