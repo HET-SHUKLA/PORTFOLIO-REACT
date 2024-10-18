@@ -51,6 +51,12 @@ const Contact = () => {
                             <img src={mediumImage} alt="Medium Icon" />
                         </a>
                     </div>
+
+                    <div className='h-16 w-16 m-2'>
+                        <a href="https://stackoverflow.com/users/18322169/het-shukla" target='_blank'>
+                            <img src={stackImage} alt="Stack overflow Icon" />
+                        </a>
+                    </div>
                 </div>
             </div>
         </>
