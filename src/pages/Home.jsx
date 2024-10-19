@@ -55,18 +55,16 @@ const Home = () => {
         }, [subIndex, index]);
     
     return (
-        <div className='w-5/6 h-3/4 flex flex-col rounded-lg bg-white/30 backdrop-blur-md py-6'>
+        <div className='w-5/6 h-3/4 flex flex-col rounded-lg border-2 border-white bg-white/50 backdrop-blur-lg py-6'>
             <div>
-                <p className='text-5xl text-center'>Good {greeting},</p>
-                <br />
-                <h1 className='text-7xl text-center'>I am HET SHUKLA</h1>
+                <p className='text-4xl text-center text-white'>Good {greeting},</p>
+                <h1 className='text-5xl text-center'>I am HET SHUKLA</h1>
             </div>
-            <br />
-            <div className='mt-10'>
-                <h2 className='text-5xl text-center'>{skill} <span className={`blinking ${index === skills.length-1 && 'hidden'}`}>_</span></h2>
+            <div className=''>
+                <h2 className='text-4xl text-center'>{skill} <span className={`blinking ${index === skills.length-1 && 'hidden'}`}>_</span></h2>
             </div>
-            <div className='mt-16'>
-                <h2 className='text-3xl text-center'>I welcome you to My <strong>Portfolio</strong></h2>
+            <div className=''>
+                <h2 className='text-2xl text-center'>I welcome you to My <strong>Portfolio</strong></h2>
             </div>
             
         </div>

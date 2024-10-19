@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from './components/RightSide/Layout';
+import Layout from './components/Content/Layout';
 import {Home, About, Projects, Contact, TechStack} from './pages';
 import {
   createBrowserRouter,
