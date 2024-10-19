@@ -23,12 +23,10 @@ const Menu = () => {
     }
 
     return (
-        <div className={`${hovers && "scale-left"} h-screen flex items-center mx-10`}>
+        <div className={`${hovers && "scale-left"} w-full flex justify-center`}>
 
-            <div className='flex flex-col justify-evenly items-center h-3/4 rounded-md p-2 border border-purple-500' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <div className='w-5/6 flex justify-evenly items-center p-2 rounded-lg bg-white/30 backdrop-blur-md' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             
-                
-                
                 <MenuItem image={profileImage} text={"Profile"} hovers={hovers} />
                 <MenuItem image={projectsImage} text={"Technical Skills"} to={"techstack"} hovers={hovers} />
                 <MenuItem image={projectsImage} text={"Projects"} to={"projects"} hovers={hovers} />
