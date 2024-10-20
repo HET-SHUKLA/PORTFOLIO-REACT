@@ -1,5 +1,7 @@
 import React from 'react';
 import Layout from './components/Content/Layout';
+import Footer from './components/Bottom/Footer';
+
 // import {
 //   createBrowserRouter,
 //   RouterProvider,
@@ -34,9 +36,7 @@ import Layout from './components/Content/Layout';
 
 const App = () => {
   return (
-    <>
-      <Layout />
-    </>
+    <Layout />
   );
 }
 

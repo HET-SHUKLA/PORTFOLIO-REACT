@@ -3,18 +3,19 @@ import Wave from 'react-wavify'
 
 const Footer = () => {
     return (
-        <Wave fill='blue'
-            paused={false}
-            style={{ display: 'flex' }}
-            options={{
-                height: 30,
-                amplitude: 20,
-                speed: 0.15,
-                points: 4
-            }}
+        <div className='w-full'>
+            <Wave fill='#111827'
+                paused={false}
+                options={{
+                    height: 20,
+                    amplitude: 20,
+                    speed: 0.15,
+                    points: 5
+                }}
+            />
 
-            className=''
-        />
+            <h1 className='text-xl text-white text-center -mt-20'>Design and Developed by <strong>HET SHUKLA</strong> </h1>
+        </div>
     );
 }
 
