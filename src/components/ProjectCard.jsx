@@ -4,22 +4,22 @@ const ProjectCard = ({projectImg, projectTitle, projectDesc, projectTech, projec
     return (
         <>
         
-            <div className='w-3/12 h-5/6 border-red-50 border mx-2 p-2'>
+            <div className='h-full p-5 mx-2 bg-gray-900 rounded-lg'>
 
                 <div className='flex w-full justify-center'>
-                    <img src={projectImg} alt='Project Image' className='h-40' />
+                    <img src={projectImg} alt='Project Image' className='h-40 rounded-lg' />
                 </div>
 
                 <div>
-                    <h3><a href={projectLink}>{projectTitle}</a></h3>
+                    <h3 className='text-white'><a href={projectLink}>{projectTitle}</a></h3>
                 </div>
 
                 <div>
-                    <h3>{projectTech}</h3>
+                    <h3 className='text-white'>{projectTech}</h3>
                 </div>
 
                 <div>
-                    <p>
+                    <p className='text-white'>
                         {projectDesc}
                     </p>
                 </div>
