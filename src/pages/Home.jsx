@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 
 import '../animations.css';
 
+import home from '/home.webm';
+import arrow from '/explore.gif';
+
 const Home = () => {
 
     const skills = ['Web Application Developer...', 'Android Developer...', 'A Software Developer!']
@@ -56,7 +59,7 @@ const Home = () => {
     
     return (
 
-        <div className='w-5/6 h-3/4 flex py-6'>
+        <div className='w-11/12 h-3/4 flex justify-between py-6 '>
             <div className='flex flex-col'>
                 <div>
                     <p className='text-5xl text-white'>Good {greeting},</p>
@@ -70,10 +73,20 @@ const Home = () => {
                 <div className=''>
                     <h2 className='text-4xl text-white'>I welcome you to My <strong>Portfolio</strong></h2>
                 </div>
+
+                <br />
+                <br />
+                {/* #FF5733 */}
+                <div className="flex justify-center">
+                    <img src={arrow} alt="" />
+                </div>
             </div>
 
-            <div>
-                <img src="" alt="" />
+            <div className='ml-2 border border-white'>
+                <video autoPlay loop muted className='border border-red-500 w-full h-full'>
+                    <source src={home} type='video/webm' />
+                    Browser
+                </video>
             </div>
         </div>
 
