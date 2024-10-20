@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 
 import '../animations.css';
 
-import home from '/home.webm';
+import home from '/home.gif';
 import arrow from '/explore.gif';
 
 const Home = () => {
+
 
     const skills = ['Web Application Developer...', 'Android Developer...', 'A Software Developer!']
     
@@ -82,11 +83,8 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className='ml-2 border border-white'>
-                <video autoPlay loop muted className='border border-red-500 w-full h-full'>
-                    <source src={home} type='video/webm' />
-                    Browser
-                </video>
+            <div className='ml-2'>
+                <img src={home} alt=""/>
             </div>
         </div>
 
