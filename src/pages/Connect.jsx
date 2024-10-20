@@ -11,7 +11,7 @@ import ConnectCard from '../components/ConnectCard';
 const Contact = ({textColor='white', wh='w-11/12'}) => {
     return (
         <>
-            <div className={`${wh} flex items-center flex-col my-10 py-5 border border-white`}>
+            <div className={`${wh} flex items-center flex-col my-10 py-5`}>
                 <div>
                     <h2 className={`text-5xl text-${textColor}`}>Connect with me</h2>
                 </div>
@@ -23,7 +23,7 @@ const Contact = ({textColor='white', wh='w-11/12'}) => {
 
                     <ConnectCard icon={emailImage} link={'mailto:shuklahet2704@gmail.com'} title={'Email'} />
 
-                    <ConnectCard icon={webImage} link={''} title={'Webapp'} />
+                    <ConnectCard icon={webImage} link={''} title={'Website'} />
 
                     <ConnectCard icon={githubImage} link={'https://github.com/HET-SHUKLA'} title={'Github'} />
 
