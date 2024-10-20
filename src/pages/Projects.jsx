@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react';
 import ProjectCard from '../components/ProjectCard';
 import '../index.css';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 const Projects = ({textColor='white', wh='w-11/12'}) => {
     return (
@@ -10,11 +12,13 @@ const Projects = ({textColor='white', wh='w-11/12'}) => {
                 <h2 className={`text-${textColor} text-5xl`}>Projects</h2>
             </div>
 
-            <div className='flex flex-wrap h-full w-full overflow-scroll hide-scroll'>
-                <ProjectCard projectDesc={'Project Description     Will Come     HERe \n Ok?'} projectTech={'REACT, TAILWIND'} projectImg={'https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'} projectTitle={'DEMO PROJECT'} projectLink={'https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3'} />
+            <Carousel>
+                <div className='flex flex-wrap h-full w-full overflow-scroll hide-scroll'>
+                    <ProjectCard projectDesc={'Project Description     Will Come     HERe \n Ok?'} projectTech={'REACT, TAILWIND'} projectImg={'https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'} projectTitle={'DEMO PROJECT'} projectLink={'https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3'} />
 
-                
-            </div>
+                    
+                </div>
+            </Carousel>
         </div>
     );
 }
