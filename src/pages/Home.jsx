@@ -5,7 +5,7 @@ import '../animations.css';
 import home from '/home.gif';
 import arrow from '/explore.gif';
 
-const Home = () => {
+const Home = ({textColor='white', wh='w-11/12 h-3/4'}) => {
 
 
     const skills = ['Web Application Developer...', 'Android Developer...', 'A Software Developer!']
@@ -60,19 +60,19 @@ const Home = () => {
     
     return (
 
-        <div className='w-11/12 h-3/4 flex justify-between py-6 '>
+        <div className={`${wh} flex justify-between p-6 mb-10`}>
             <div className='flex flex-col'>
                 <div>
-                    <p className='text-5xl text-white'>Good {greeting},</p>
-                    <h1 className='text-8xl text-white'>I am HET SHUKLA</h1>
+                    <p className={`text-5xl text-${textColor}`}>Good {greeting},</p>
+                    <h1 className={`text-8xl text-${textColor}`}>I am HET SHUKLA</h1>
                 </div>
                 <br />
                 <div className=''>
-                    <h2 className='text-5xl text-white'>{skill} <span className={`blinking ${index === skills.length-1 && 'hidden'}`}>_</span></h2>
+                    <h2 className={`text-5xl text-${textColor}`}>{skill} <span className={`blinking ${index === skills.length-1 && 'hidden'}`}>_</span></h2>
                 </div>
                 <br />
                 <div className=''>
-                    <h2 className='text-4xl text-white'>I welcome you to My <strong>Portfolio</strong></h2>
+                    <h2 className={`text-4xl text-${textColor}`}>I welcome you to My <strong>Portfolio</strong></h2>
                 </div>
 
                 <br />

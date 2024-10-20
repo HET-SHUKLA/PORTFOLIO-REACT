@@ -1,5 +1,5 @@
-import React, { Fragment } from 'react';
-import {Outlet} from 'react-router-dom';
+import React from 'react';
+import {Home, About, Projects, Contact, TechStack} from '../../pages';
 import Menu from '../Top/Menu';
 import Footer from '../Bottom/Footer';
 
@@ -12,12 +12,14 @@ const Layout = () => {
                         <Menu />
                     </div>
                     <div className='flex-col h-screen w-full flex items-center mt-20'>
-                        <div className='h-screen w-full flex justify-center'>
-                            <Outlet />
-                        </div>
-                        <div className='h-full w-full'>
-                            <Footer />
-                        </div>
+                        <Home textColor={'white'} />
+                        <TechStack textColor={'white'} />
+                        <About textColor={'white'} />
+                        <Projects textColor={'white'} />
+                        <Contact  textColor={'white'} />
+                    </div>
+                    <div className='h-full w-full'>
+                        {/* <Footer /> */}
                     </div>
                 </div>
 

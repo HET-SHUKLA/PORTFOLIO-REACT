@@ -7,13 +7,13 @@ const MenuItem = ({image, text, to="", hovers=false}) => {
     return (
         <>
             <div className=''>
-                <Link to={to}>
+                <a to={to}>
                     <div className='flex items-center'>
                         <div className={`ml-3`}>
                             <p className='text-white'>{text}</p>
                         </div>
                     </div>
-                </Link>
+                </a>
             </div>
         </>
     );
