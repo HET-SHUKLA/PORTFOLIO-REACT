@@ -2,12 +2,12 @@ import React, { Fragment } from 'react';
 import ProjectCard from '../components/ProjectCard';
 import '../index.css';
 
-const Projects = () => {
+const Projects = ({textColor='white', wh='w-11/12'}) => {
     return (
-        <div className='h-5/6 w-full flex items-center flex-col'>
+        <div className={`${wh} my-10 py-5 flex items-center flex-col`}>
 
             <div>
-                <h2 className='text-5xl'>Projects</h2>
+                <h2 className={`text-${textColor} text-5xl`}>Projects</h2>
             </div>
 
             <div className='flex flex-wrap h-full w-full overflow-scroll hide-scroll'>

@@ -5,7 +5,7 @@ import '../animations.css';
 import home from '/home.gif';
 import arrow from '/explore.gif';
 
-const Home = ({textColor='white', wh='w-11/12 h-3/4'}) => {
+const Home = ({textColor='white', wh='w-11/12'}) => {
 
 
     const skills = ['Web Application Developer...', 'Android Developer...', 'A Software Developer!']
