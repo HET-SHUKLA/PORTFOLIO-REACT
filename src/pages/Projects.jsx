@@ -10,7 +10,7 @@ import 'swiper/css/scrollbar';
 
 const Projects = ({textColor='white', wh='w-11/12'}) => {
     return (
-        <div className={`${wh} my-10 py-5 flex items-center flex-col`}>
+        <div className={`${wh} my-10 py-5 flex items-center flex-col border border-white`}>
 
             <div>
                 <h2 className={`text-${textColor} text-5xl`}>Projects</h2>

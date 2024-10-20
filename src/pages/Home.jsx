@@ -60,7 +60,7 @@ const Home = ({textColor='white', wh='w-11/12'}) => {
     
     return (
 
-        <div className={`${wh} flex justify-between p-6 mb-10`}>
+        <div className={`${wh} flex justify-between p-6 mb-10 border border-white`}>
             <div className='flex flex-col'>
                 <div>
                     <p className={`text-5xl text-${textColor}`}>Good {greeting},</p>

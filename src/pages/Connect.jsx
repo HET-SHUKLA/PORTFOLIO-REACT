@@ -6,57 +6,31 @@ import webImage from '/website.png';
 import githubImage from '/github.png';
 import mediumImage from '/medium.png';
 import stackImage from '/stack.png';
+import ConnectCard from '../components/ConnectCard';
 
-const Contact = () => {
+const Contact = ({textColor='white', wh='w-11/12'}) => {
     return (
         <>
-            <div className='w-full h-5/6 flex items-center flex-col'>
+            <div className={`${wh} flex items-center flex-col my-10 py-5 border border-white`}>
                 <div>
-                    <h2 className='text-5xl'>Connect with me</h2>
+                    <h2 className={`text-5xl text-${textColor}`}>Connect with me</h2>
                 </div>
+                <br />
+                <div className={`${wh} flex items-start flex-wrap`}>
+                    <ConnectCard icon={linkedinIcon} link={'https://linkedin.com/in/het--shukla'} title={'Linkedin'} />
 
-                <div className='w-5/6 mt-28 flex items-start flex-wrap justify-between'>
-                    <div className='h-16 w-16 m-2'>
-                        <a href="https://linkedin.com/in/het--shukla" target='_blank'>
-                            <img src={linkedinIcon} alt="Linkedin Icon" />
-                        </a>
-                    </div>
+                    <ConnectCard icon={xImage} link={'https://x.com/het_shukla66566'} title={'X'} />
 
-                    <div className='h-16 w-16 m-2'>
-                        <a href="https://x.com/het_shukla66566" target='_blank'>
-                            <img src={xImage} alt="X Icon" />
-                        </a>
-                    </div>
+                    <ConnectCard icon={emailImage} link={'mailto:shuklahet2704@gmail.com'} title={'Email'} />
 
-                    <div className='h-16 w-16 m-2'>
-                        <a href="mailto:shuklahet2704@gmail.com" target='_blank'>
-                            <img src={emailImage} alt="Email Icon" />
-                        </a>
-                    </div>
+                    <ConnectCard icon={webImage} link={''} title={'Webapp'} />
 
-                    <div className='h-16 w-16 m-2'>
-                        <a href="" target='_blank'>
-                            <img src={webImage} alt="Webapp Icon" />
-                        </a>
-                    </div>
+                    <ConnectCard icon={githubImage} link={'https://github.com/HET-SHUKLA'} title={'Github'} />
 
-                    <div className='h-16 w-16 m-2'>
-                        <a href="https://github.com/HET-SHUKLA" target='_blank'>
-                            <img src={githubImage} alt="Github Icon" />
-                        </a>
-                    </div>
+                    <ConnectCard icon={mediumImage} link={'https://medium.com/@shuklahet2704'} title={'Medium'} />
 
-                    <div className='h-16 w-16 m-2'>
-                        <a href="https://medium.com/@shuklahet2704" target='_blank'>
-                            <img src={mediumImage} alt="Medium Icon" />
-                        </a>
-                    </div>
+                    <ConnectCard icon={stackImage} link={'https://stackoverflow.com/users/18322169/het-shukla'} title={'Stack overflow'} />
 
-                    <div className='h-16 w-16 m-2'>
-                        <a href="https://stackoverflow.com/users/18322169/het-shukla" target='_blank'>
-                            <img src={stackImage} alt="Stack overflow Icon" />
-                        </a>
-                    </div>
                 </div>
             </div>
         </>

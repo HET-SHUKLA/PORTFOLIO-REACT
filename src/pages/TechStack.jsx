@@ -4,7 +4,7 @@ import TechSkill from '../components/TechSkill';
 const TechStack = ({textColor='white', wh='w-11/12'}) => {
     return (
         <>
-            <div className={`${wh} my-10 py-5 text-center`}>
+            <div className={`${wh} my-10 py-5 text-center border border-white`}>
                 <div>
                     <h2 className={`text-5xl text-${textColor}`}>Tools and Technologies</h2>
                 </div>

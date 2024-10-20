@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const About = ({textColor='white', wh='w-11/12'}) => {
     return (
         <>
-          <div className={`${wh} my-10 p-5 flex flex-col items-center`}>
+          <div className={`${wh} my-10 p-5 flex flex-col items-center border border-white`}>
             <div>
               <h1 className={`text-5xl text-${textColor}`}>About Me</h1>
             </div>
