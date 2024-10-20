@@ -55,19 +55,28 @@ const Home = () => {
         }, [subIndex, index]);
     
     return (
-        <div className='w-5/6 h-3/4 flex flex-col rounded-lg border-2 border-white bg-white/50 backdrop-blur-lg py-6'>
+
+        <div className='w-5/6 h-3/4 flex py-6'>
+            <div className='flex flex-col'>
+                <div>
+                    <p className='text-5xl text-white'>Good {greeting},</p>
+                    <h1 className='text-8xl text-white'>I am HET SHUKLA</h1>
+                </div>
+                <br />
+                <div className=''>
+                    <h2 className='text-5xl text-white'>{skill} <span className={`blinking ${index === skills.length-1 && 'hidden'}`}>_</span></h2>
+                </div>
+                <br />
+                <div className=''>
+                    <h2 className='text-4xl text-white'>I welcome you to My <strong>Portfolio</strong></h2>
+                </div>
+            </div>
+
             <div>
-                <p className='text-4xl text-center text-white'>Good {greeting},</p>
-                <h1 className='text-5xl text-center'>I am HET SHUKLA</h1>
+                <img src="" alt="" />
             </div>
-            <div className=''>
-                <h2 className='text-4xl text-center'>{skill} <span className={`blinking ${index === skills.length-1 && 'hidden'}`}>_</span></h2>
-            </div>
-            <div className=''>
-                <h2 className='text-2xl text-center'>I welcome you to My <strong>Portfolio</strong></h2>
-            </div>
-            
         </div>
+
         
     );
 }

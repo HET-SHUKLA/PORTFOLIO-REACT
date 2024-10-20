@@ -7,7 +7,7 @@ const Layout = () => {
     return (
         <>
             <div className='flex flex-col h-full w-screen overflow-auto hide-scroll'>
-                <div className='flex flex-col h-screen w-full pt-5'>
+                <div className='flex flex-col h-screen w-full'>
                     <div className='w-full flex justify-center fixed z-10'>
                         <Menu />
                     </div>

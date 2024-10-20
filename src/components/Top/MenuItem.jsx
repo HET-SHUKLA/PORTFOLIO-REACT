@@ -9,11 +9,8 @@ const MenuItem = ({image, text, to="", hovers=false}) => {
             <div className=''>
                 <Link to={to}>
                     <div className='flex items-center'>
-                        <div className='w-8 h-8'>
-                            <img src={image} alt={text} /> 
-                        </div>
-                        <div className={`ml-3 ${!hovers && "hidden"}`}>
-                            <p className='scale-up-hor-left scale-up-hor-left-close'>{text}</p>
+                        <div className={`ml-3`}>
+                            <p className='text-white'>{text}</p>
                         </div>
                     </div>
                 </Link>

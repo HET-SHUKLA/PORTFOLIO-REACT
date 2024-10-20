@@ -21,17 +21,17 @@ const Menu = () => {
             setHovers(false);
         //}, 1000);
     }
-
+    // onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
     return (
-        <div className={`${hovers && "scale-left"} w-full flex justify-center`}>
+        <div className={`w-full flex justify-center`}>
 
-            <div className='w-5/6 flex justify-evenly items-center p-2 rounded-lg bg-white/30 backdrop-blur-md' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <div className='w-5/6 flex justify-evenly items-center p-2 rounded-lg'>
             
-                <MenuItem image={profileImage} text={"Profile"} hovers={hovers} />
-                <MenuItem image={projectsImage} text={"Technical Skills"} to={"techstack"} hovers={hovers} />
-                <MenuItem image={projectsImage} text={"Projects"} to={"projects"} hovers={hovers} />
-                <MenuItem image={aboutImage} text={"About"} to={"about"} hovers={hovers} />
-                <MenuItem image={aboutImage} text={"Connect"} to={"connect"} hovers={hovers} />
+                <MenuItem text={"Home"} hovers={hovers}  />
+                <MenuItem text={"Technical Skills"} to={"techstack"} hovers={hovers} />
+                <MenuItem text={"Projects"} to={"projects"} hovers={hovers} />
+                <MenuItem text={"About"} to={"about"} hovers={hovers} />
+                <MenuItem text={"Connect"} to={"connect"} hovers={hovers} />
                 
             </div>
 
