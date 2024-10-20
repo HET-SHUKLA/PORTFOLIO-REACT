@@ -13,8 +13,8 @@ const Layout = () => {
                     </div>
                     <div className='flex-col h-screen w-full flex items-center mt-20'>
                         <Home textColor={'white'} />
-                        <TechStack textColor={'white'} />
                         <About textColor={'white'} />
+                        <TechStack textColor={'white'} />
                         <Projects textColor={'white'} />
                         <Contact  textColor={'white'} />
                     </div>
