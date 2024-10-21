@@ -12,7 +12,7 @@ const Contact = ({textColor='white', wh='w-11/12'}) => {
 
     return (
         <>
-            <div className={`${wh} flex items-center flex-col my-10 py-5`}>
+            <div className={`${wh} flex items-center flex-col my-10 py-5`} id='contact'>
                 <div>
                     <h2 className={`text-5xl text-${textColor}`}>Connect with me</h2>
                 </div>

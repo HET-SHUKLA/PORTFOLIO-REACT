@@ -24,11 +24,11 @@ const Menu = () => {
 
             <div className='w-full flex justify-evenly items-center p-2 rounded-lg bg-transparent backdrop-blur-sm'>
             
-                <MenuItem text={"Home"} hovers={hovers}  />
-                <MenuItem text={"Technical Skills"} to={"techstack"} hovers={hovers} />
-                <MenuItem text={"Projects"} to={"projects"} hovers={hovers} />
-                <MenuItem text={"About"} to={"about"} hovers={hovers} />
-                <MenuItem text={"Connect"} to={"connect"} hovers={hovers} />
+                <MenuItem text={"Home"} hovers={hovers} to={'#home'}  />
+                <MenuItem text={"Technical Skills"} to={"#techstack"} hovers={hovers} />
+                <MenuItem text={"Projects"} to={"#projects"} hovers={hovers} />
+                <MenuItem text={"About"} to={"#about"} hovers={hovers} />
+                <MenuItem text={"Contact"} to={"#contact"} hovers={hovers} />
                 
             </div>
 

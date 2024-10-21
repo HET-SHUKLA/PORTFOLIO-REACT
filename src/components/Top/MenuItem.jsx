@@ -7,8 +7,8 @@ const MenuItem = ({image, text, to="", hovers=false}) => {
     return (
         <>
             <div className='hover:bg-black cursor-pointer p-3 rounded-lg'>
-                <a to={to} className='text-center'>
-                    <p className='text-white'>{text}</p>
+                <a href={to} className='text-center'>
+                    <p className='text-white hover:underline'>{text}</p>
                 </a>
             </div>
         </>
