@@ -17,7 +17,7 @@ const Projects = ({textColor='white', wh='w-11/12'}) => {
             </div>
 
             <Swiper 
-                className={`${wh} h-full mt-10`}
+                className={`w-full h-full mt-10`}
                 spaceBetween={30}
                 slidesPerView={3} // Number of items per view
                 navigation={true} // Enables arrows for navigation
