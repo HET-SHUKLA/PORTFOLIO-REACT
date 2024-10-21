@@ -28,23 +28,23 @@ const Layout = () => {
                         <Menu />
                     </div>
                     <div className={`flex-col w-full flex items-center mt-20 control ${isVisible ? 'visible' : ''}`}>
-                        <section className={`${wh} control flex flex-col justify-between p-6 mb-10 `} id='home'>
+                        <section className={`section-padding ${wh} control flex flex-col justify-between p-6 mb-10 `} id='home'>
                             <Home textColor={'white'} />
                         </section>
 
-                        <section className={`${wh} control my-10 p-5 flex flex-col items-center`} id='about'>
+                        <section className={`section-padding ${wh} control my-10 p-5 flex flex-col items-center`} id='about'>
                             <About textColor={'white'} />
                         </section>
 
-                        <section className={`${wh} control my-10 py-5 text-center`} id='techstack'>
+                        <section className={`section-padding ${wh} control my-10 py-5 text-center`} id='techstack'>
                             <TechStack textColor={'white'} />
                         </section>
 
-                        <section className={`${wh} control my-10 py-5 flex items-center flex-col`} id='projects'>
+                        <section className={`section-padding ${wh} control my-10 py-5 flex items-center flex-col`} id='projects'>
                             <Projects textColor={'white'} />
                         </section>
 
-                        <section className={`${wh} control flex items-center flex-col my-10 py-5`} id='contact'>
+                        <section className={`section-padding ${wh} control flex items-center flex-col my-10 py-5`} id='contact'>
                             <Contact  textColor={'white'} />
                         </section>
                     </div>                    

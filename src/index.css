@@ -47,5 +47,9 @@ html {
 
 section {
   scroll-snap-align: start;
-  height: 100vh; /* Full viewport height */
+}
+
+.section-padding {
+  padding-top: 70px; /* Height of your navbar */
+  margin-top: -70px; /* Negative margin to pull it up */
 }
