@@ -32,7 +32,7 @@ const Projects = ({textColor='white', wh='w-11/12'}) => {
                 breakpoints={{
                 1024: { slidesPerView: 3 },
                 768: { slidesPerView: 2 },
-                640: { slidesPerView: 1 },
+                0: { slidesPerView: 1 },
                 }}
             >
                 <SwiperSlide className=''>

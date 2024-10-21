@@ -6,7 +6,7 @@ const MenuItem = ({image, text, to="", hovers=false}) => {
 
     return (
         <>
-            <div className='hover:bg-black cursor-pointer p-3 rounded-lg'>
+            <div className='cursor-pointer p-3 rounded-lg hover:bg-orange-600'>
                 <button className='text-center' onClick={() => {
                     const ele = document.querySelector(to);
                     ele?.scrollIntoView({
