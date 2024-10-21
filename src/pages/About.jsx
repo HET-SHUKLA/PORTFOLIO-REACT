@@ -24,7 +24,7 @@ const About = ({textColor='white', wh='w-11/12'}) => {
                 <br /><br />
 
                 If you share my love for programming, or if you have a challenge you'd like me to tackle, feel free to 
-                <a href="#connect" > <strong>connect with me here. </strong></a>
+                <a href="#contact" > <strong>connect with me here. </strong></a>
 
                 <br /><br />
 
