@@ -78,7 +78,7 @@ const Home = ({textColor='white', wh='w-11/12'}) => {
                     </div>
                     <br />
                     <div className=''>
-                        <h2 className={`text-2xl text-${textColor}`}>I welcome you to My Portfolio. I love developing new things, If you have any idea or wanted to work with me, you can connect with anyone of my social medias, Or you can send me an email here.</h2>
+                        <h2 className={`text-2xl text-${textColor}`}>I welcome you to my portfolio. I love developing new things. If you have any ideas or would like to work with me, you can connect with any of my social media accounts, or you can send me an email <a href="#contact">here.</a></h2>
                     </div>
 
                     <div className='flex mt-10'>
