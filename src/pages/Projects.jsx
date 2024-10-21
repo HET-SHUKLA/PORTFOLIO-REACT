@@ -62,7 +62,7 @@ const Projects = ({textColor='white', wh='w-11/12'}) => {
                     <div className=''>
                         <ProjectCard 
                         projectImg={portfolio} 
-                        projectTitle={'Portfolio website'} 
+                        projectTitle={'Portfolio website'}  
                         projectTech={'React, Tailwind'}
                         projectDesc={'Personal portfolio website, I have created using REACT, this was my 2nd React projects.'}   
                         live={'#'} 
