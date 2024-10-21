@@ -6,13 +6,9 @@ const MenuItem = ({image, text, to="", hovers=false}) => {
 
     return (
         <>
-            <div className=''>
-                <a to={to}>
-                    <div className='flex items-center'>
-                        <div className={`ml-3`}>
-                            <p className='text-white'>{text}</p>
-                        </div>
-                    </div>
+            <div className='hover:bg-black cursor-pointer p-3 rounded-lg'>
+                <a to={to} className='text-center'>
+                    <p className='text-white'>{text}</p>
                 </a>
             </div>
         </>

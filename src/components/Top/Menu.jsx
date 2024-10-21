@@ -1,7 +1,4 @@
 import React from 'react';
-import profileImage from '/profile.png';
-import aboutImage from '/about.png';
-import projectsImage from '/projects.png';
 import '../../animations.css';
 import MenuItem from './MenuItem';
 import { useState } from 'react';
@@ -25,7 +22,7 @@ const Menu = () => {
     return (
         <div className={`w-full flex justify-center`}>
 
-            <div className='w-5/6 flex justify-evenly items-center p-2 rounded-lg'>
+            <div className='w-full flex justify-evenly items-center p-2 rounded-lg bg-transparent backdrop-blur-sm'>
             
                 <MenuItem text={"Home"} hovers={hovers}  />
                 <MenuItem text={"Technical Skills"} to={"techstack"} hovers={hovers} />
