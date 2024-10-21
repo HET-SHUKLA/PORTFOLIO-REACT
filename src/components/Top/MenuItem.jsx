@@ -10,7 +10,9 @@ const MenuItem = ({image, text, to="", hovers=false}) => {
                 <button className='text-center' onClick={() => {
                     const ele = document.querySelector(to);
                     ele?.scrollIntoView({
-                        behavior: 'smooth'
+                        behavior: 'smooth',
+                        block: 'start',
+                        inline: 'nearest'
                     })
                 }} >
                     <p className='text-white hover:underline'>{text}</p>

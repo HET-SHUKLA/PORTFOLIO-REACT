@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Layout from './components/Content/Layout';
-import Footer from './components/Bottom/Footer';
+import './index.css';
 
 // import {
 //   createBrowserRouter,

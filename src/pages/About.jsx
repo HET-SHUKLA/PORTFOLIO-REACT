@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import '../index.css';
 
 const About = ({textColor='white', wh='w-11/12'}) => {
     return (
         <>
-          <div className={`${wh} my-10 p-5 flex flex-col items-center`} id='about'>
+          <div className={`${wh} control my-10 p-5 flex flex-col items-center`} id='about'>
             <div>
               <h1 className={`text-5xl text-${textColor}`}>About Me</h1>
             </div>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import '../animations.css';
+import '../index.css';
 import linkedinIcon from '/Linkedin.png';
 import xImage from '/x.png';
 import githubImage from '/github.png';
@@ -64,7 +65,7 @@ const Home = ({textColor='white', wh='w-11/12'}) => {
     
     return (
 
-        <div className={`${wh} flex flex-col justify-between p-6 mb-10 `} id='home'>
+        <div className={`${wh} control flex flex-col justify-between p-6 mb-10 `} id='home'>
             <div className={`w-full flex justify-between bg-gray-900 rounded-lg`}>
                 <div className='flex flex-col bg-gray-900 p-5 rounded-lg'>
                     <div>

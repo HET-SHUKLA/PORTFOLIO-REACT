@@ -11,11 +11,12 @@ import news from '/projects/news.png';
 import whisper from '/projects/whisper.png';
 import portfolio from '/projects/portfolio.png';
 import blog from '/projects/blog.png';
+import '../index.css';
 
 
 const Projects = ({textColor='white', wh='w-11/12'}) => {
     return (
-        <div className={`${wh} my-10 py-5 flex items-center flex-col`} id='projects'>
+        <div className={`${wh} control my-10 py-5 flex items-center flex-col`} id='projects'>
 
             <div>
                 <h2 className={`text-${textColor} text-5xl`}>Projects</h2>

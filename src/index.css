@@ -20,3 +20,24 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* App.css */
+.app {
+  opacity: 0;
+  transition: opacity 2s ease-in-out; /* Opacity transition */
+}
+
+.app.visible {
+  opacity: 1; /* Fully visible */
+}
+
+/* Controls styles */
+.control {
+  transform: translateY(30px); /* Start from 30px below */
+  transition: transform 2s ease-in-out; /* Transition for control movement */
+}
+
+.control.visible {
+  transform: translateY(0); /* Move to original position */
+}
+

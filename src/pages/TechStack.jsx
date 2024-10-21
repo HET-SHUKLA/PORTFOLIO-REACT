@@ -1,10 +1,11 @@
 import React from 'react';
 import TechSkill from '../components/TechSkill';
+import '../index.css';
 
 const TechStack = ({textColor='white', wh='w-11/12'}) => {
     return (
         <>
-            <div className={`${wh} my-10 py-5 text-center`} id='techstack'>
+            <div className={`${wh} control my-10 py-5 text-center`} id='techstack'>
                 <div>
                     <h2 className={`text-5xl text-${textColor}`}>Tools and Technologies</h2>
                 </div>
