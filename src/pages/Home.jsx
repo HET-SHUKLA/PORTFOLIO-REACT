@@ -11,13 +11,13 @@ import arrow from '/explore.gif';
 const Home = ({textColor='white', wh='w-11/12'}) => {
 
 
-    const skills = ['Web Application Developer...', 'Android Developer...', 'A Software Developer!']
+    const skills = ['Web Developer...', 'Android Developer...', 'A Software Developer!']
     
     const [skill, setSkill] = useState(skills[0]);
     const [index, setIndex] = useState(0);
     const [subIndex, setSubIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const [speed, setSpeed] = useState(20);
+    const [speed, setSpeed] = useState(30);
 
     const currTime = new Date().getHours();
     let greeting;
