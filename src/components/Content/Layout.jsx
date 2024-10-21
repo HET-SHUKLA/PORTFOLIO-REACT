@@ -4,6 +4,7 @@ import {Home, About, Projects, Contact, TechStack} from '../../pages';
 import Menu from '../Top/Menu';
 import Footer from '../Bottom/Footer';
 
+
 const Layout = () => {
     const [isVisible, setIsVisible] = useState(false);
 
