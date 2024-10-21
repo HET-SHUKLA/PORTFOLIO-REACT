@@ -65,7 +65,7 @@ const Home = ({textColor='white', wh='w-11/12'}) => {
     
     return (
 
-        <div className={`${wh} control flex flex-col justify-between p-6 mb-10 `} id='home'>
+        <>
             <div className={`w-full flex justify-between bg-gray-900 rounded-lg`}>
                 <div className='flex flex-col bg-gray-900 p-5 rounded-lg'>
                     <div>
@@ -98,7 +98,7 @@ const Home = ({textColor='white', wh='w-11/12'}) => {
                 <img src={arrow} alt="" />
             </div>
 
-        </div>
+        </>
 
         
     );

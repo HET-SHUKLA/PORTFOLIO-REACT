@@ -16,7 +16,7 @@ import '../index.css';
 
 const Projects = ({textColor='white', wh='w-11/12'}) => {
     return (
-        <div className={`${wh} control my-10 py-5 flex items-center flex-col`} id='projects'>
+        <>
 
             <div>
                 <h2 className={`text-${textColor} text-5xl`}>Projects</h2>
@@ -83,7 +83,7 @@ const Projects = ({textColor='white', wh='w-11/12'}) => {
                     </div>
                 </SwiperSlide>
             </Swiper>
-        </div>
+        </>
     );
 }
 
