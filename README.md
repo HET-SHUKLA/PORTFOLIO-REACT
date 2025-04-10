@@ -2,4 +2,4 @@
 
 Using REACT
 
-[Link](https://hetshukla-portfolio.vercel.app/)
+[Link](https://hetshukla.com/)
